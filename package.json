@@ -1,0 +1,30 @@
+{
+  "name": "cookie",
+  "version": "1.0.0",
+  "description": "A Javascript Cookie management library.",
+  "main": "src/cookie.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build-full": "rollup src/browser.js --file dist/cookie.js && rollup src/browser.js | uglifyjs -o dist/cookie.min.js --source-map",
+    "build": "rollup src/browser.js --file dist/cookie.js",
+    "publish": "npm publish --access public",
+    "test": "http-server"
+  },
+  "keywords": [
+    "Cookie",
+    "JS Cookie",
+    "Javascript"
+  ],
+  "author": "Sun",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SunPodder/cookie.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SunPodder/cookie.js/issues"
+  },
+  "homepage": "https://github.com/SunPodder/cookie.js#readme"
+}
